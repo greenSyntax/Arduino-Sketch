@@ -4,7 +4,7 @@
 ### HC-05 Module
 This is a Bluetooth module which communicate over Serials.
 
-```
+```c
 // Check whether Serial is available or not
 if(Serial.available()>0){
 
@@ -29,7 +29,7 @@ if(Serial.available()>0){
 
 * Scan Near By Networks
 
-```
+```c
 // Set Baud Rate
 Serial.begin(115200);
 
