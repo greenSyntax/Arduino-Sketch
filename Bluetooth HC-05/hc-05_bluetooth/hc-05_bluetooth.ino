@@ -1,6 +1,6 @@
 int redLed= 8; 
-int greenLed = 7; 
-char inputState;  
+
+char inputState = '0';  
   
 void setup() 
 {  
@@ -8,7 +8,6 @@ void setup()
 
   //Initialize LEDs
   pinMode(redLed, OUTPUT);
-  pinMode(redLed, OUTPUT);  
 }  
   
 void loop() 
@@ -23,8 +22,8 @@ void loop()
     digitalWrite(redLed, HIGH);
     Serial.println("LED is ON");
    }
-   else if (inputState == '0'){
-
+   else if(inputState == '0') {
+    
     digitalWrite(redLed, LOW);
     Serial.println("LED is OFF");
    }
